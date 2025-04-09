@@ -16,3 +16,6 @@ pip install -r requirements.txt
 ```
 python3 merge_pdf.py
 ```
+The first run creates a text file “content_pdf.txt” with a list of pdf files in the current directory. This list can be sorted in the order in which the pdf files need to be merged.
+
+The second run merges all pdf files listed in “content_pdf.txt” into a single pdf file “merged.pdf”

@@ -9,7 +9,7 @@ exit $?
 
 """
 
-from PyPDF2 import PdfFileMerger
+from PyPDF2 import PdfMerger
 import os
 
 
@@ -35,7 +35,7 @@ def main():
                 fp.write(f + '\n')
         return
 
-    pdfs = PdfFileMerger()
+    pdfs = PdfMerger()
     for pdf in load_pdf_files():
         pdfs.append(open(pdf, 'rb'))
 
